@@ -1,178 +1,72 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
   <title>Esha Chavan | Portfolio</title>
 
   <style>
-    :root {
-      --bg1: #0f0c1d;
-      --bg2: #1b1633;
-      --card: #1f1b3a;
-      --primary: #f4f2ff;
-      --secondary: #b6b0d9;
-      --accent1: #9f8cff;
-      --accent2: #f0a6ff;
-      --glow: rgba(159,140,255,0.35);
-    }
-
-    * {
-      box-sizing: border-box;
-    }
-
     body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
-      background: radial-gradient(circle at top, var(--bg2), var(--bg1));
+      font-family: Arial, sans-serif;
+      background-color: #f4f6f8;
       margin: 0;
-      padding: 40px 20px;
-      color: var(--primary);
-      line-height: 1.7;
+      padding: 40px;
     }
 
-    .container {
-      max-width: 900px;
-      margin: auto;
-    }
-
-    h1 {
-      font-size: 2.4rem;
-      margin-bottom: 6px;
-      background: linear-gradient(90deg, var(--accent1), var(--accent2));
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-
-    p.subtitle {
-      color: var(--secondary);
-      margin-bottom: 36px;
-      font-size: 1.05rem;
+    h1, h2, h3 {
+      color: #2c3e50;
     }
 
     .card {
-      background: linear-gradient(180deg, #24204a, var(--card));
-      padding: 28px;
-      margin-bottom: 28px;
-      border-radius: 18px;
-      box-shadow: 0 0 0 rgba(0,0,0,0);
-      transition: transform 0.25s ease, box-shadow 0.25s ease;
-    }
-
-    .card:hover {
-      transform: translateY(-6px);
-      box-shadow: 0 0 35px var(--glow);
-    }
-
-    .card h2 {
-      display: inline-block;
-      margin-bottom: 16px;
-      font-size: 1.35rem;
-      background: linear-gradient(90deg, var(--accent1), var(--accent2));
-      color: #0f0c1d;
-      padding: 6px 16px;
-      border-radius: 12px;
-    }
-
-    ul {
-      padding-left: 18px;
-      margin: 0;
-    }
-
-    li {
-      margin-bottom: 10px;
+      background: #ffffff;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     }
 
     a {
-      color: var(--accent1);
+      color: #007acc;
       text-decoration: none;
-      font-weight: 500;
-      position: relative;
     }
 
-    a::after {
-      content: "";
-      position: absolute;
-      left: 0;
-      bottom: -4px;
-      width: 0;
-      height: 2px;
-      background: linear-gradient(90deg, var(--accent1), var(--accent2));
-      transition: width 0.3s ease;
-    }
-
-    a:hover::after {
-      width: 100%;
-    }
-
-    .project p {
-      color: var(--secondary);
-      margin-top: 8px;
-    }
-
-    .contact li {
-      list-style: none;
-      margin-bottom: 10px;
-    }
-
-    footer {
-      text-align: center;
-      margin-top: 50px;
-      font-size: 0.85rem;
-      color: var(--secondary);
+    ul {
+      padding-left: 20px;
     }
   </style>
 </head>
 
 <body>
-  <div class="container">
 
-    <h1>Hi, I’m Esha 👋</h1>
-    <p class="subtitle">Finding patterns, trends, and stories in data</p>
+  <h1>Hi, I’m Esha 👋</h1>
+  <p>Finding patterns, trends and stories in data</p>
 
-    <div class="card">
-      <h2>🛠 Skills</h2>
-      <ul>
-        <li><strong>Excel & Google Sheets:</strong> Lookup functions, Pivot Tables, Dashboards</li>
-        <li><strong>Python Basics:</strong> Pandas, Data Cleaning, EDA</li>
-        <li><strong>Basic Automation:</strong> Google Apps Script</li>
-        <li><strong>BI Tools:</strong> Power BI</li>
-      </ul>
-    </div>
-
-    <div class="card">
-      <h2>📌 Projects</h2>
-      <div class="project">
-        <strong>Automated Data Entry & Timestamp Tracker</strong>
-        <p>
-          Google Sheets project that records timestamps automatically when tasks are entered.<br>
-          <a href="https://github.com/eshachavan/automated-timestamp-tracker" target="_blank">
-            View on GitHub →
-          </a>
-        </p>
-      </div>
-    </div>
-
-    <div class="card">
-      <h2>📬 Contact</h2>
-      <ul class="contact">
-        <li>
-          LinkedIn:
-          <a href="https://www.linkedin.com/in/eshachavan3010/" target="_blank">
-            linkedin.com/in/eshachavan3010
-          </a>
-        </li>
-        <li>
-          Email:
-          <a href="mailto:eshachavan3010@gmail.com">
-            eshachavan3010@gmail.com
-          </a>
-        </li>
-      </ul>
-    </div>
-
-    <footer>
-      © 2026 · Esha Chavan
-    </footer>
-
+  <div class="card">
+    <h2>🛠 Skills</h2>
+    <ul>
+      <li>Excel & Google Sheets: Lookup functions, Pivot Tables & Dashboards</li>
+      <li>Python Basics: Pandas, Data Cleaning, EDA</li>
+      <li>Basic Automation using Google Apps Script</li>
+      <li>Power BI</li>
+    </ul>
   </div>
+
+  <div class="card">
+    <h2>📌 Projects</h2>
+    <p>
+      <strong>Automated Data Entry & Timestamp Tracker</strong><br>
+      Google Sheets project that records timestamps automatically when tasks are entered.<br>
+      <a href="https://github.com/eshachavan/automated-timestamp-tracker" target="_blank">
+        View Project →
+      </a>
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>📬 Contact</h2>
+    <ul>
+      <li>LinkedIn: https://www.linkedin.com/in/eshachavan3010/</li>
+      <li>Email: eshachavan3010@gmail.com</li>
+    </ul>
+  </div>
+
 </body>
 </html>
