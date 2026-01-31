@@ -6,13 +6,14 @@
 
   <style>
     :root {
-      --bg: #f7f5ff;
-      --card: #ffffff;
-      --primary: #2d2a3a;
-      --secondary: #7b7693;
-      --accent1: #a18cd1;
-      --accent2: #fbc2eb;
-      --accent-soft: #efeaff;
+      --bg1: #0f0c1d;
+      --bg2: #1b1633;
+      --card: #1f1b3a;
+      --primary: #f4f2ff;
+      --secondary: #b6b0d9;
+      --accent1: #9f8cff;
+      --accent2: #f0a6ff;
+      --glow: rgba(159,140,255,0.35);
     }
 
     * {
@@ -21,7 +22,7 @@
 
     body {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
-      background: linear-gradient(180deg, var(--bg), #ffffff);
+      background: radial-gradient(circle at top, var(--bg2), var(--bg1));
       margin: 0;
       padding: 40px 20px;
       color: var(--primary);
@@ -41,11 +42,6 @@
       -webkit-text-fill-color: transparent;
     }
 
-    h2 {
-      font-size: 1.4rem;
-      margin-bottom: 14px;
-    }
-
     p.subtitle {
       color: var(--secondary);
       margin-bottom: 36px;
@@ -53,30 +49,32 @@
     }
 
     .card {
-      background: var(--card);
-      padding: 26px;
+      background: linear-gradient(180deg, #24204a, var(--card));
+      padding: 28px;
       margin-bottom: 28px;
-      border-radius: 16px;
-      box-shadow: 0 12px 30px rgba(161,140,209,0.15);
+      border-radius: 18px;
+      box-shadow: 0 0 0 rgba(0,0,0,0);
       transition: transform 0.25s ease, box-shadow 0.25s ease;
     }
 
     .card:hover {
       transform: translateY(-6px);
-      box-shadow: 0 18px 40px rgba(161,140,209,0.25);
+      box-shadow: 0 0 35px var(--glow);
     }
 
     .card h2 {
       display: inline-block;
+      margin-bottom: 16px;
+      font-size: 1.35rem;
       background: linear-gradient(90deg, var(--accent1), var(--accent2));
-      color: #fff;
-      padding: 6px 14px;
-      border-radius: 10px;
+      color: #0f0c1d;
+      padding: 6px 16px;
+      border-radius: 12px;
     }
 
     ul {
       padding-left: 18px;
-      margin-top: 14px;
+      margin: 0;
     }
 
     li {
@@ -84,7 +82,7 @@
     }
 
     a {
-      color: #7c6cf6;
+      color: var(--accent1);
       text-decoration: none;
       font-weight: 500;
       position: relative;
@@ -94,7 +92,7 @@
       content: "";
       position: absolute;
       left: 0;
-      bottom: -3px;
+      bottom: -4px;
       width: 0;
       height: 2px;
       background: linear-gradient(90deg, var(--accent1), var(--accent2));
@@ -106,8 +104,8 @@
     }
 
     .project p {
-      margin-top: 8px;
       color: var(--secondary);
+      margin-top: 8px;
     }
 
     .contact li {
