@@ -6,11 +6,12 @@
 
   <style>
     :root {
-      --bg: #f7f8fa;
+      --bg: #f6f4fb;          /* very light lavender */
       --card: #ffffff;
-      --primary: #1f2937;   /* dark gray */
-      --secondary: #6b7280; /* muted text */
-      --accent: #2563eb;    /* soft blue */
+      --primary: #2e2a3a;     /* deep muted purple-gray */
+      --secondary: #7a7390;   /* soft muted text */
+      --accent: #8b7cf6;      /* lavender accent */
+      --accent-light: #ece9ff;
     }
 
     * {
@@ -23,7 +24,7 @@
       margin: 0;
       padding: 40px 20px;
       color: var(--primary);
-      line-height: 1.6;
+      line-height: 1.7;
     }
 
     .container {
@@ -32,27 +33,31 @@
     }
 
     h1 {
-      font-size: 2.2rem;
-      margin-bottom: 5px;
+      font-size: 2.3rem;
+      margin-bottom: 6px;
     }
 
     h2 {
       font-size: 1.4rem;
-      margin-bottom: 12px;
+      margin-bottom: 14px;
+      display: inline-block;
+      background: var(--accent-light);
+      padding: 6px 12px;
+      border-radius: 8px;
     }
 
     p.subtitle {
       color: var(--secondary);
-      margin-bottom: 30px;
-      font-size: 1rem;
+      margin-bottom: 32px;
+      font-size: 1.05rem;
     }
 
     .card {
       background: var(--card);
-      padding: 24px;
-      margin-bottom: 24px;
-      border-radius: 12px;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+      padding: 26px;
+      margin-bottom: 26px;
+      border-radius: 14px;
+      box-shadow: 0 10px 25px rgba(139,124,246,0.08);
     }
 
     ul {
@@ -61,7 +66,7 @@
     }
 
     li {
-      margin-bottom: 8px;
+      margin-bottom: 10px;
     }
 
     a {
@@ -74,18 +79,19 @@
       text-decoration: underline;
     }
 
-    .project {
-      margin-bottom: 10px;
+    .project p {
+      margin-top: 8px;
+      color: var(--secondary);
     }
 
     .contact li {
       list-style: none;
-      margin-bottom: 8px;
+      margin-bottom: 10px;
     }
 
     footer {
       text-align: center;
-      margin-top: 40px;
+      margin-top: 45px;
       font-size: 0.85rem;
       color: var(--secondary);
     }
@@ -103,7 +109,7 @@
       <ul>
         <li><strong>Excel & Google Sheets:</strong> Lookup functions, Pivot Tables, Dashboards</li>
         <li><strong>Python Basics:</strong> Pandas, Data Cleaning, EDA</li>
-        <li><strong>Automation:</strong> Google Apps Script</li>
+        <li><strong>Basic Automation:</strong> Google Apps Script</li>
         <li><strong>BI Tools:</strong> Power BI</li>
       </ul>
     </div>
@@ -146,5 +152,3 @@
   </div>
 </body>
 </html>
-<!-- redeploy -->
-
