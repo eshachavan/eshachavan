@@ -1,20 +1,23 @@
 # Esha Chavan | Portfolio
 
 Hi, I’m **Esha** 👋  
-Finding patterns, trends, and stories in data
 ---
 
 ## 🛠 Skills
-- Excel & Google Sheets: Lookup functions, Pivot Tables and Dashboards  
-- Python Basics: Pandas, Data Cleaning, EDA
-- Basic Automation using Google Apps Script
-- Power BI
+- MS Office: Excel, Outlook, Word & Power Point.
+- Google Workspace: Sheets, Docs & Slides.
+- Python Basics
+- HTML & CSS
 ---
 
 ## 📌 Projects
 Here are some of the projects featured in this portfolio:
 
-### 1. Automated Data Entry & Timestamp Tracker
+### 1. Email Newsletter Builder
+- A simple HTML, CSS and JavaScript tool to create and preview custom email newsletters in real time.
+- [View Project →](https://github.com/eshachavan/email-newsletter-builder)
+
+### 2. Automated Data Entry & Timestamp Tracker
 - Google Sheets project that records timestamps automatically when tasks are entered.  
 - [View Project →](https://github.com/eshachavan/automated-timestamp-tracker)
 
